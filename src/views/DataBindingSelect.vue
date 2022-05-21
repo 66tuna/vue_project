@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-      city: '64'
+      city: '064'
     }
   }
 }

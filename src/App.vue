@@ -3,13 +3,17 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/databinding">Data Binding</router-link> |
-    <router-link to="/databindinginputtext">Data Binding Input Text</router-link> |
-    <router-link to="/databindinginputnumber">Data Binding Input Number</router-link> |
-    <router-link to="/databindingtextarea">Data Binding Textarea</router-link> |
-    <router-link to="/databindingselect">Data Binding Select</router-link> |
-    <router-link to="/databindingcheckbox">Data Binding CheckBox</router-link> |
-    <router-link to="/databindingcheckbox2">Data Binding CheckBox2</router-link> |
-    <router-link to="/databindingtset">Data Binding Test</router-link>
+    <router-link to="/databindinginputtext">Input Text</router-link> |
+    <router-link to="/databindinginputnumber">Input Number</router-link> |
+    <router-link to="/databindingtextarea">Textarea</router-link> |
+    <router-link to="/databindingselect">Select</router-link> |
+    <router-link to="/databindingcheckbox">CheckBox</router-link> |
+    <router-link to="/databindingcheckbox2">CheckBox2</router-link> |
+    <router-link to="/databindingtset">Test</router-link> |
+    <router-link to="/databindingattribue">Img</router-link> |
+    <router-link to="/databindingbutton">Button</router-link> |
+    <router-link to="/databindingclass">Class</router-link> |
+    <router-link to="/databindingclass2">Class2</router-link>
   </nav>
   <router-view/>
 </template>
