@@ -13,7 +13,9 @@
     <router-link to="/databindingattribue">Img</router-link> |
     <router-link to="/databindingbutton">Button</router-link> |
     <router-link to="/databindingclass">Class</router-link> |
-    <router-link to="/databindingclass2">Class2</router-link>
+    <router-link to="/databindingclass2">Class2</router-link> |
+    <router-link to="/databindingstyle">Style</router-link> |
+    <router-link to="/databindinglist">List</router-link> |
   </nav>
   <router-view/>
 </template>

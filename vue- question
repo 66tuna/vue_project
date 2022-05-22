@@ -1,2 +1,5 @@
  queryselectorall얘가 배열로 만들어주는지 아니면
 처음부터 html내부에 배열로 들어가나?
+
+<tr :key="i" v-for="(product,i) in productList">
+저 key가 vue의 가상 dom의 아이디를 찾는다는건데 그럼 지가 알아서 i++이런식으로 찾아오나요?
