@@ -16,6 +16,9 @@
     <router-link to="/databindingclass2">Class2</router-link> |
     <router-link to="/databindingstyle">Style</router-link> |
     <router-link to="/databindinglist">List</router-link> |
+    <router-link to="/renderingvif">RenderingVif</router-link> |
+    <router-link to="/renderingvshow">RenderingVshow</router-link> |
+    <router-link to="/eventclick">eClick</router-link> |
   </nav>
   <router-view/>
 </template>
