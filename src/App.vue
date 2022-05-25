@@ -25,6 +25,8 @@
     <router-link to="/eventkeyup">eKeyUp</router-link> |
     <router-link to="/computed">Computed</router-link> |
     <router-link to="/watch">Watch</router-link> |
+    <router-link to="/databindinglist2">List2</router-link> |
+    <router-link to="/nestedcomponent">NestedComponent</router-link>
   </nav>
   <router-view/>
 </template>
