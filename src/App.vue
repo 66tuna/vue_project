@@ -19,6 +19,12 @@
     <router-link to="/renderingvif">RenderingVif</router-link> |
     <router-link to="/renderingvshow">RenderingVshow</router-link> |
     <router-link to="/eventclick">eClick</router-link> |
+    <router-link to="/eventclickset7">eClickSet7</router-link> |
+    <router-link to="/eventclickalert">eClickAlert</router-link> |
+    <router-link to="/eventchange">eChange</router-link> |
+    <router-link to="/eventkeyup">eKeyUp</router-link> |
+    <router-link to="/computed">Computed</router-link> |
+    <router-link to="/watch">Watch</router-link> |
   </nav>
   <router-view/>
 </template>

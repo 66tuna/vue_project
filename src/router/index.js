@@ -17,6 +17,14 @@ import DataBindingList from '../views/DataBindingList.vue'
 import RenderingVif from '../views/RenderingVif.vue'
 import RenderingVshow from '../views/RenderingVshow.vue'
 import EventClick from '../views/EventClick.vue'
+import EventClickSet7 from '../views/EventClickSet7.vue'
+import EventClickAlert from '../views/EventClickAlert.vue'
+import EventChange from '../views/EventChange.vue'
+import EventKeyUp from '../views/EventKeyUp.vue'
+import Computed from '../views/Computed.vue'
+import Watch from '../views/Watch.vue'
+import DataBindingList2 from '../views/DataBindingList2'
+// import { computed } from 'vue'
 const routes = [
   {
     path: '/',
@@ -115,6 +123,41 @@ const routes = [
     path: '/eventclick',
     name: 'EventClick',
     component: EventClick
+  },
+  {
+    path: '/eventclickset7',
+    name: 'EventClickSet7',
+    component: EventClickSet7
+  },
+  {
+    path: '/eventclickalert',
+    name: 'EventClickAlert',
+    component: EventClickAlert
+  },
+  {
+    path: '/eventchange',
+    name: 'EventChange',
+    component: EventChange
+  },
+  {
+    path: '/eventkeyup',
+    name: 'EventKeyUp',
+    component: EventKeyUp
+  },
+  {
+    path: '/computed',
+    name: 'Computed',
+    component: Computed
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: Watch
+  },
+  {
+    path: '/databindinglist2',
+    name: 'DataBindingList2',
+    component: DataBindingList2
   }
 ]
 
