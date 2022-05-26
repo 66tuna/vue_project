@@ -31,6 +31,7 @@ import ParentComponent3 from '../views/ParentComponent3.vue'
 import ParentComponent4 from '../views/ParentComponent4.vue'
 import ParentComponent5 from '../views/ParentComponent5.vue'
 import SlotModalLayout from '../views/SlotModalLayout.vue'
+import ProvideInject from '../views/ProvideInject.vue'
 // import { computed } from 'vue'
 const routes = [
   {
@@ -200,6 +201,11 @@ const routes = [
     path: '/slotmodallayout',
     name: 'SlotModalLayout',
     component: SlotModalLayout
+  },
+  {
+    path: '/provideinject',
+    name: 'ProvideInject',
+    component: ProvideInject
   }
 ]
 

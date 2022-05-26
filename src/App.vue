@@ -33,6 +33,7 @@
     <router-link to="/parentcomponent4">parentcomponent4</router-link> |
     <router-link to="/parentcomponent5">parentcomponent5</router-link> |
     <router-link to="/slotmodallayout">Slot</router-link> |
+    <router-link to="/provideinject">ProvideInject</router-link>
   </nav>
   <router-view/>
 </template>
