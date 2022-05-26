@@ -1,6 +1,10 @@
 <template>
     <h2>{{title}}</h2>
     <p>{{level}}</p>
+    <p>{{isShow}}/</p>
+    <p>{{commentIds}}</p>
+    <p>{{author}}</p>
+    <p>{{post}}</p>
 </template>
 
 <script>
@@ -13,6 +17,19 @@ export default {
     level: {
       type: Number,
       default: 0
+    },
+    isShow: {
+      type: Boolean,
+      default: false
+    },
+    commentIds: {
+      type: Array
+    },
+    author: {
+      type: Object
+    },
+    post: {
+      type: Object
     }
   }
 }

@@ -23,8 +23,14 @@ import EventChange from '../views/EventChange.vue'
 import EventKeyUp from '../views/EventKeyUp.vue'
 import Computed from '../views/Computed.vue'
 import Watch from '../views/Watch.vue'
-import DataBindingList2 from '../views/DataBindingList2'
-import NestedComponent from '../views/NestedComponent'
+import DataBindingList2 from '../views/DataBindingList2.vue'
+import NestedComponent from '../views/NestedComponent.vue'
+import ParentComponent from '../views/ParentComponent.vue'
+import ParentComponent2 from '../views/ParentComponent2.vue'
+import ParentComponent3 from '../views/ParentComponent3.vue'
+import ParentComponent4 from '../views/ParentComponent4.vue'
+import ParentComponent5 from '../views/ParentComponent5.vue'
+import SlotModalLayout from '../views/SlotModalLayout.vue'
 // import { computed } from 'vue'
 const routes = [
   {
@@ -164,6 +170,36 @@ const routes = [
     path: '/nestedcomponent',
     name: 'NestedComponent',
     component: NestedComponent
+  },
+  {
+    path: '/parentcomponent',
+    name: 'ParentComponent',
+    component: ParentComponent
+  },
+  {
+    path: '/parentcomponent2',
+    name: 'ParentComponent2',
+    component: ParentComponent2
+  },
+  {
+    path: '/parentcomponent3',
+    name: 'ParentComponent3',
+    component: ParentComponent3
+  },
+  {
+    path: '/parentcomponent4',
+    name: 'ParentComponent4',
+    component: ParentComponent4
+  },
+  {
+    path: '/parentcomponent5',
+    name: 'ParentComponent5',
+    component: ParentComponent5
+  },
+  {
+    path: '/slotmodallayout',
+    name: 'SlotModalLayout',
+    component: SlotModalLayout
   }
 ]
 

@@ -26,7 +26,13 @@
     <router-link to="/computed">Computed</router-link> |
     <router-link to="/watch">Watch</router-link> |
     <router-link to="/databindinglist2">List2</router-link> |
-    <router-link to="/nestedcomponent">NestedComponent</router-link>
+    <router-link to="/nestedcomponent">NestedComponent</router-link> |
+    <router-link to="/parentcomponent">ParentComponent</router-link> |
+    <router-link to="/parentcomponent2">ParentComponent2</router-link> |
+    <router-link to="/parentcomponent3">ParentComponent3</router-link> |
+    <router-link to="/parentcomponent4">parentcomponent4</router-link> |
+    <router-link to="/parentcomponent5">parentcomponent5</router-link> |
+    <router-link to="/slotmodallayout">Slot</router-link> |
   </nav>
   <router-view/>
 </template>

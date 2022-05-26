@@ -1,7 +1,7 @@
 <template>
     <div>
         <PageTitle title="부모 컴포넌트에서 자식 컴포넌트로 데이터 전달"/> <!-- 이렇게 바로 때려박으면 정적 -->
-        <PageTitle v-bind:title="title" :level="level"/>  <!-- 이렇게 data로 return에 한번 거치고 가야지 동적 -->
+        <PageTitle v-bind:title="title" :level="level" :isShow="isShow" :commentIds="commentIds" :author="author" :post="post.id" />  <!-- 이렇게 data로 return에 한번 거치고 가야지 동적 -->
     </div>
 </template>
 
@@ -11,7 +11,17 @@ export default {
   data () {
     return {
       title: '동적 페이지 타이틀',
-      level: 10
+      level: 10,
+      isShow: true,
+      commentIds: [234, 266, 273],
+      author: {
+        name: 'Veronica',
+        job: 'Dynamics'
+      },
+      post: {
+        id: 1,
+        name: 'adf'
+      }
     }
   },
   components: {

@@ -1,0 +1,17 @@
+<template>
+    <child-component @send-message="sendMessage" />
+</template>
+
+<script>
+import ChildComponent from './ChildComponent4.vue'
+export default {
+  components: {
+    'child-component': ChildComponent
+  },
+  methods: {
+    sendMessage (data) {
+      console.log(data)
+    }
+  }
+}
+</script>
