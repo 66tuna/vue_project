@@ -33,7 +33,17 @@
     <router-link to="/parentcomponent4">parentcomponent4</router-link> |
     <router-link to="/parentcomponent5">parentcomponent5</router-link> |
     <router-link to="/slotmodallayout">Slot</router-link> |
-    <router-link to="/provideinject">ProvideInject</router-link>
+    <router-link to="/provideinject">ProvideInject</router-link> |
+    <router-link to="/calculator">Calculator</router-link> |
+    <router-link to="/compositionapi">CompositionApi</router-link> |
+    <router-link to="/compositionapi2">CompositionApi2</router-link> |
+    <router-link to="/compositionapi3">CompositionApi3</router-link> |
+    <router-link to="/compositionapi4">CompositionApi4</router-link> |
+    <router-link to="/compositionapiprovide">CompositionAPIProvide</router-link> |
+    <router-link to="/mixins">Mixins</router-link> |
+    <router-link to="/customdirective">CustomDirective</router-link> |
+    <router-link to="/kakaologin">kakaologin</router-link> |
+    <!-- <router-link to="/storeaccess">StoreAccess</router-link> | -->
   </nav>
   <router-view/>
 </template>

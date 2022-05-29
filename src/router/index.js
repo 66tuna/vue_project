@@ -32,6 +32,16 @@ import ParentComponent4 from '../views/ParentComponent4.vue'
 import ParentComponent5 from '../views/ParentComponent5.vue'
 import SlotModalLayout from '../views/SlotModalLayout.vue'
 import ProvideInject from '../views/ProvideInject.vue'
+import Calculator from '../views/Calculator.vue'
+import CompositionApi from '../views/CompositionApi.vue'
+import CompositionApi2 from '../views/CompositionApi2.vue'
+import CompositionApi3 from '../views/CompositionApi3.vue'
+import CompositionApi4 from '../views/CompositionApi4.vue'
+import CompositionAPIProvide from '../views/CompositionAPIProvide.vue'
+import Mixins from '../views/Mixins.vue'
+import CustomDirective from '../views/CustomDirective.vue'
+import KakaoLogin from '../views/KakaoLogin.vue'
+// import StoreAccess from '../views/StoreAccess.vue'
 // import { computed } from 'vue'
 const routes = [
   {
@@ -206,6 +216,61 @@ const routes = [
     path: '/provideinject',
     name: 'ProvideInject',
     component: ProvideInject
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: Calculator
+  },
+  {
+    path: '/compositionapi',
+    name: 'CompositionApi',
+    component: CompositionApi
+  },
+  {
+    path: '/compositionapi2',
+    name: 'CompositionApi2',
+    component: CompositionApi2
+  },
+  {
+    path: '/compositionapi3',
+    name: 'CompositionApi3',
+    component: CompositionApi3
+  },
+  {
+    path: '/compositionapi4',
+    name: 'CompositionApi4',
+    component: CompositionApi4
+  },
+  {
+    path: '/compositionapiprovide',
+    name: 'CompositionAPIProvide',
+    component: CompositionAPIProvide
+  },
+  {
+    path: '/mixins',
+    name: 'Mixins',
+    component: Mixins
+  },
+  {
+    path: '/customdirective',
+    name: 'CustomDirective',
+    component: CustomDirective
+  },
+  {
+    path: '/kakaologin',
+    name: 'KakaoLogin',
+    component: KakaoLogin
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/NaverLogin.vue')
+  },
+  {
+    path: '/login/naver',
+    name: 'naver',
+    component: () => import('@/views/LoginAccess.vue')
   }
 ]
 
