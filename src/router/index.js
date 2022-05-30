@@ -41,6 +41,7 @@ import CompositionAPIProvide from '../views/CompositionAPIProvide.vue'
 import Mixins from '../views/Mixins.vue'
 import CustomDirective from '../views/CustomDirective.vue'
 import KakaoLogin from '../views/KakaoLogin.vue'
+import NaverLogin from '../views/NaverLogin.vue'
 // import StoreAccess from '../views/StoreAccess.vue'
 // import { computed } from 'vue'
 const routes = [
@@ -265,12 +266,7 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: () => import('@/views/NaverLogin.vue')
-  },
-  {
-    path: '/login/naver',
-    name: 'naver',
-    component: () => import('@/views/LoginAccess.vue')
+    component: NaverLogin
   }
 ]
 

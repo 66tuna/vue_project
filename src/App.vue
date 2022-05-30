@@ -43,6 +43,7 @@
     <router-link to="/mixins">Mixins</router-link> |
     <router-link to="/customdirective">CustomDirective</router-link> |
     <router-link to="/kakaologin">kakaologin</router-link> |
+    <router-link to="/login">NaverLogin</router-link> |
     <!-- <router-link to="/storeaccess">StoreAccess</router-link> | -->
   </nav>
   <router-view/>
