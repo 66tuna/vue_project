@@ -16,4 +16,5 @@ app.directive('focus', {
   }
 })
 
+// app.prototype.$axios = axios
 window.Kakao.init('41abc0888d4f8d6ce5eb1e04e5ee8bd3')

@@ -1,75 +1,53 @@
 <template>
-    <div class="vuex">
-    <h1>Sample 화면 입니다.</h1>
-    totalItems : {{ totalItems }} <br />
-    totalPages : {{ totalPages }} <br />
-    <ul>
-      <li v-for="(row, i) in items" :key="'result_table_' + i">{{ row }}</li>
-    </ul>
-  </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                   <th>제품명</th>
+                   <th>가격</th>
+                   <th>카테고리</th>
+                   <th>배송료</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr :key="i" v-for="(product, i) in productList">
+                    <td>{{product.product_name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.delivery_price}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script>
-import http from 'axios'
 export default {
   data () {
     return {
-      list: [],
-      totalItems: 0,
-      totalPages: 0
+      productList: []
     }
   },
+  created () {
+    this.getList()
+  },
   methods: {
-    delete (id) {
-      http.delete('../api' + id).then(response => {
-        const { data } = response
-        console.log(data)
-      }).catch(error => {
-        alert(error)
-      })
-    },
-    create (id, params) {
-      http.post('../api', params).then(response => {
-        const { data } = response
-        console.log(data)
-      }).catch(error => {
-        alert(error)
-      })
-    },
-    update (id, params) {
-      http.put('../api' + id, {
-        params: params
-      }).then(response => {
-        const { data } = response
-        console.log(data)
-      }).catch(error => {
-        alert(error)
-      })
-    },
-    read () {
-      const params = {}
-      http.get('../api', {
-        params: params
-      }).then(response => {
-        const { data } = response
-        console.log(data)
-        this.items = data.items
-        this.totalItems = data.totalItems
-        this.totalPages = data.totalPages
-      }).catch(error => {
-        alert(error)
-      })
-    },
-    created () {
-      console.log(http)
+    async getList () {
+      this.productList = await this.$api('https://2ecb7f07-a9bf-4bf8-87c7-e7bd3a538821.mock.pstmn.io/list', 'get')
     }
   }
 }
 </script>
 
 <style scoped>
-  .main {
-    border: solid 5px #000;
-    padding: 100px;
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
   }
-</style>
+  td,th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+</style>>

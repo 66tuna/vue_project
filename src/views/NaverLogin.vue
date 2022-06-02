@@ -1,14 +1,21 @@
 <template>
-  <button type="button" @click="naverLogin">네이버 로그인</button>
+  <div id="naverIdLogin"></div>
+  <button type="button" @click="logout()">로그아웃</button>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  methods () {
+  data () {
+    return {
+      naverLogin: null
+    }
+  },
+  mounted () {
     this.naverLogin = new window.naver.LoginWithNaverId(
       {
         clientId: 'RTo7CfjxAc1UAFjOnfDs',
-        callbackUrl: 'http://localhost:8080/login/naver',
+        callbackUrl: 'http://localhost:8080/naverlogin',
         isPopup: false,
         loginButton: { color: 'green', type: 3, height: 60 }
       }
@@ -34,6 +41,16 @@ export default {
     // naverIdLogin.init_naver_id_login()
     // console.log(naverIdLogin)
     })
+  },
+  methods: {
+    logout () {
+      const accessToken = this.naverLogin.accessToken.accessToken
+      console.log(this.naverLogin)
+      const url = `/oauth2.0/token?grant_type=delete&client_id=RTo7CfjxAc1UAFjOnfDs&client_secret=4l2oMBiuwS&access_token=${accessToken}&service_provider=NAVER`
+      axios.get(url).then((res) => {
+        console.log(res.data)
+      })
+    }
   }
 }
 </script>

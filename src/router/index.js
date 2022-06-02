@@ -43,6 +43,7 @@ import CustomDirective from '../views/CustomDirective.vue'
 import KakaoLogin from '../views/KakaoLogin.vue'
 import NaverLogin from '../views/NaverLogin.vue'
 import RestApi from '../views/RestApi.vue'
+// import RestApi2 from '../views/RestApi2.vue'
 // import StoreAccess from '../views/StoreAccess.vue'
 // import { computed } from 'vue'
 const routes = [
@@ -265,7 +266,7 @@ const routes = [
     component: KakaoLogin
   },
   {
-    path: '/login',
+    path: '/naverlogin',
     name: 'Login',
     component: NaverLogin
   },
